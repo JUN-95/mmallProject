@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/orderDetail/test" method="get">
+    <table th:each="listArr:${listArrayList}">
+        <tr th:each="l:${listArr}">
+            <td th:text="${l}"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
